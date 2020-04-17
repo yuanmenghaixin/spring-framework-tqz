@@ -18,7 +18,7 @@ public class SpringApplication {
     public static void run(Class<?> applicationClass, String[] args) throws Exception {
         long start = System.currentTimeMillis();
         Tomcat tomcat = new Tomcat();
-
+        //读取配置文件application.properties
         PropertiesConfig propertiesConfig = new PropertiesConfig();
         tomcat.setPort(propertiesConfig.getPort());
 

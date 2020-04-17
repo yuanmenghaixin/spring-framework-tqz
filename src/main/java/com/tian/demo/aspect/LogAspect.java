@@ -26,7 +26,7 @@ public class LogAspect {
      */
     @Before
     public void before(){
-        log.info("前置通知。。。");
+       System.out.println("前置通知。。。");
     }
 
     /**
@@ -34,7 +34,7 @@ public class LogAspect {
      */
     @AfterThrowing
     public void afterThrowing(){
-        log.info("异常通知。。。");
+       System.out.println("异常通知。。。");
     }
 
     /**
@@ -42,7 +42,7 @@ public class LogAspect {
      */
     @After
     public void after(){
-        log.info("后置通知。。。");
+       System.out.println("后置通知。。。");
     }
 
     /**
@@ -50,7 +50,7 @@ public class LogAspect {
      */
     @AfterReturning
     public void afterReturning(){
-        log.info("最终返回通知。。。");
+       System.out.println("最终返回通知。。。");
     }
 
 }
